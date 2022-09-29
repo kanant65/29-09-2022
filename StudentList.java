@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
 
-public class StudentList extends Students{
+public class StudentList{
 	
 	  @SuppressWarnings("unchecked")
 		public static void main(String[] args) {
