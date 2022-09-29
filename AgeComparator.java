@@ -1,11 +1,11 @@
 package com.collection_test.bll;
 import java.util.Comparator;
 
-public class AgeComparator implements Comparator{
+public class AgeComparator implements Comparator<Students>{
 	
 	
 	@Override
-	public int compare(Object o1, Object o2) { //comparison of objects 
+	public int compare(Students o1, Students o2) { //comparison of objects 
 		Students student1 = (Students)o1;
 		Students student2 = (Students)o2;
 		
