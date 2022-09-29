@@ -78,7 +78,13 @@ public class StudentList{
 		  
 		    /*
 		   //Sorting by name and State
-		   
+		    Collections.sort(students, new Comparator<Students>() {
+			  @Override
+			  public int compare(Students s1, Students s2) {
+			    return (s1.getStudentName().compareTo(s2.getStudentName()));
+			  }
+			});
+			
 		    Collections.sort(students, new Comparator<Students>() {
 			  @Override
 			  public int compare(Students s1, Students s2) {
@@ -86,12 +92,7 @@ public class StudentList{
 			  }
 			});
 			
-		  Collections.sort(students, new Comparator<Students>() {
-			  @Override
-			  public int compare(Students s1, Students s2) {
-			    return (s1.getStudentName().compareTo(s2.getStudentName()));
-			  }
-			});
+		 
 		
 			
 		 for(Students student:students) {
