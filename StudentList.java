@@ -78,18 +78,21 @@ public class StudentList{
 		  
 		    /*
 		   //Sorting by name and State
+		   
+		    Collections.sort(students, new Comparator<Students>() {
+			  @Override
+			  public int compare(Students s1, Students s2) {
+			    return (s1.getState().compareTo(s2.getState()));
+			  }
+			});
+			
 		  Collections.sort(students, new Comparator<Students>() {
 			  @Override
 			  public int compare(Students s1, Students s2) {
 			    return (s1.getStudentName().compareTo(s2.getStudentName()));
 			  }
 			});
-		 Collections.sort(students, new Comparator<Students>() {
-			  @Override
-			  public int compare(Students s1, Students s2) {
-			    return (s1.getState().compareTo(s2.getState()));
-			  }
-			});
+		
 			
 		 for(Students student:students) {
 			 System.out.println(student);
